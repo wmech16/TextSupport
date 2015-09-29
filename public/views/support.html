@@ -1,0 +1,8 @@
+<div class = 'ticket' ng-repeat = '(num, msgs) in numbers'>
+    <span class = 'from'> {{num}}</span>
+    <span class = 'message' ng-repeat = '(id, msg) in msgs'>
+        <p> {{msg.date_sent}}</p>
+        <p> {{msg.body}}</p>
+    </span>
+    <input type="text" ng-model="newMessage"/><buttonx ng-click="sendStuff(newMessage, number)">click</button>
+</div>
